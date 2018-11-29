@@ -1,15 +1,15 @@
-﻿Build started 11/13/2018 10:13:13 PM.
-     1>Project "C:\Users\donov\Desktop\Quake modding\Games\Quake II\Johnathan Adventure\quake2-full\game\game.vcxproj" on node 2 (Build target(s)).
+﻿Build started 11/28/2018 10:13:02 PM.
+     1>Project "C:\Users\donov\Desktop\Quake modding\Games\Quake II\Johnathan Adventure\game\game.vcxproj" on node 2 (Build target(s)).
      1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(364,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Z7 /nologo /W4 /WX- /O2 /Oy- /D WIN32 /D NDEBUG /D _WINDOWS /D _VC80_UPGRADE=0x0600 /D _WINDLL /GF /Gm- /EHsc /MT /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\release\\" /Fd".\release\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt g_weapon.c
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Z7 /nologo /W4 /WX- /O2 /Oy- /D WIN32 /D NDEBUG /D _WINDOWS /D _VC80_UPGRADE=0x0600 /D _WINDLL /GF /Gm- /EHsc /MT /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\release\\" /Fd".\release\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt g_weapon.c p_weapon.c
          g_weapon.c
      1>g_weapon.c(455): warning C4100: 'plane' : unreferenced formal parameter
      1>g_weapon.c(856): warning C4127: conditional expression is constant
-     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(1193,5): warning MSB8012: TargetPath(C:\Users\donov\Desktop\Quake modding\Games\Quake II\Johnathan Adventure\quake2-full\game\..\..\..\baseq2\game.dll) does not match the Linker's OutputFile property value (C:\Users\donov\Desktop\Quake modding\Games\Quake II\Johnathan Adventure\quake2-full\release\gamex86.dll). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
-     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(1195,5): warning MSB8012: TargetName(game) does not match the Linker's OutputFile property value (gamex86). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+         p_weapon.c
+         Generating Code...
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"..\release\gamex86.dll" /INCREMENTAL:NO /NOLOGO winmm.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /DEF:".\game.def" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:"..\..\..\baseq2\game.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /BASE:"0x20000000" /DYNAMICBASE /NXCOMPAT /IMPLIB:".\..\release\gamex86.lib" /MACHINE:X86 /SAFESEH /DLL .\release\g_ai.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"..\baseq2\gamex86.dll" /INCREMENTAL:NO /NOLOGO winmm.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /DEF:".\game.def" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:"..\baseq2\gamex86.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /BASE:"0x20000000" /DYNAMICBASE /NXCOMPAT /IMPLIB:".\..\release\gamex86.lib" /MACHINE:X86 /SAFESEH /DLL .\release\g_ai.obj
          .\release\g_chase.obj
          .\release\g_cmds.obj
          .\release\g_combat.obj
@@ -58,9 +58,9 @@
          .\release\p_weapon.obj
          .\release\q_shared.obj
             Creating library .\..\release\gamex86.lib and object .\..\release\gamex86.exp
-         game.vcxproj -> C:\Users\donov\Desktop\Quake modding\Games\Quake II\Johnathan Adventure\quake2-full\game\..\..\..\baseq2\game.dll
-     1>Done Building Project "C:\Users\donov\Desktop\Quake modding\Games\Quake II\Johnathan Adventure\quake2-full\game\game.vcxproj" (Build target(s)).
+         game.vcxproj -> C:\Users\donov\Desktop\Quake modding\Games\Quake II\Johnathan Adventure\game\..\baseq2\gamex86.dll
+     1>Done Building Project "C:\Users\donov\Desktop\Quake modding\Games\Quake II\Johnathan Adventure\game\game.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:01.93
+Time Elapsed 00:00:02.19

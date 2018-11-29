@@ -1472,7 +1472,7 @@ void CTFWeapon_Grapple_Fire (edict_t *ent)
 	ent->client->ps.gunframe++;
 }
 
-void CTFWeapon_Grapple (edict_t *ent)
+void CTFWeapon_Grapple (edict_t *ent)     //JohnAdventure
 {
 	static int	pause_frames[]	= {10, 18, 27, 0};
 	static int	fire_frames[]	= {6, 0};

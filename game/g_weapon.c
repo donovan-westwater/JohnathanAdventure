@@ -491,8 +491,8 @@ void fire_grenade (edict_t *self, vec3_t start, vec3_t aimdir, int damage, int s
 	//this bit is all me john adv
 
 
-	aimdir[0] = 0;
-	aimdir[1] = 1;
+	//aimdir[0] = 0;
+	//aimdir[1] = 1;
 
 	//added bit ends
 
@@ -502,9 +502,9 @@ void fire_grenade (edict_t *self, vec3_t start, vec3_t aimdir, int damage, int s
 	grenade = G_Spawn();
 	VectorCopy (start, grenade->s.origin);
 	VectorScale (aimdir, speed, grenade->velocity);
-	VectorMA (grenade->velocity, 200 + crandom() * 0.0, up, grenade->velocity); //added orgi *10.0
-	VectorMA (grenade->velocity, crandom() * 0.0, right, grenade->velocity); //added orgi *10.0
-	VectorSet (grenade->avelocity, 0, 0, -300); //john adv (added) 300 300 300
+	VectorMA (grenade->velocity, 200 + crandom() * 10.0, up, grenade->velocity); //added orgi *10.0
+	VectorMA (grenade->velocity, crandom() * 10.0, right, grenade->velocity); //added orgi *10.0
+	VectorSet (grenade->avelocity, 300, 300, 300); //john adv (added) 300 300 300
 	grenade->movetype = MOVETYPE_BOUNCE;
 	grenade->clipmask = MASK_SHOT;
 	grenade->solid = SOLID_BBOX;
@@ -531,8 +531,8 @@ void fire_grenade2 (edict_t *self, vec3_t start, vec3_t aimdir, int damage, int 
 	//this bit is all me john adv
 
 
-	aimdir[0] = 0;
-	aimdir[1] = 1;
+	//aimdir[0] = 0;
+	//aimdir[1] = 1;
 
 	//added bit ends
 	vectoangles (aimdir, dir);
@@ -541,9 +541,9 @@ void fire_grenade2 (edict_t *self, vec3_t start, vec3_t aimdir, int damage, int 
 	grenade = G_Spawn();
 	VectorCopy (start, grenade->s.origin);
 	VectorScale (aimdir, speed, grenade->velocity);
-	VectorMA (grenade->velocity, 200 + crandom() * 0.0, up, grenade->velocity);//added orgi *10.0
-	VectorMA (grenade->velocity, crandom() * 0.0, right, grenade->velocity); // added orgi *10.0
-	VectorSet(grenade->avelocity, 00, 0, -300); //john adv (added) 300 300 300
+	VectorMA (grenade->velocity, 200 + crandom() * 10.0, up, grenade->velocity);//added orgi *10.0
+	VectorMA (grenade->velocity, crandom() * 10.0, right, grenade->velocity); // added orgi *10.0
+	VectorSet(grenade->avelocity, 300, 300, 300); //john adv (added) 300 300 300
 	grenade->movetype = MOVETYPE_BOUNCE;
 	grenade->clipmask = MASK_SHOT;
 	grenade->solid = SOLID_BBOX;
