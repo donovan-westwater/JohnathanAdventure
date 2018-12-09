@@ -615,6 +615,14 @@ void InitClientPersistant (gclient_t *client)
 	client->pers.inventory[client->pers.selected_item] = 1;
 
 	client->pers.weapon = item;
+	//ZOID johnadv
+	client->pers.lastweapon = item;
+	//ZOID
+
+	//ZOID
+	item = FindItem("Grapple");
+	client->pers.inventory[ITEM_INDEX(item)] = 1;
+	//ZOID
 
 	client->pers.health			= 100;
 	client->pers.max_health		= 100;
@@ -1568,6 +1576,7 @@ This will be called once for each client frame, which will
 usually be a couple times for each server frame.
 ==============
 */
+//Johnadv HERE IS WHERE WE IMPLEMENT THE WAVE SYSTEM!!!!!!!!!!!!!!!!
 void ClientThink (edict_t *ent, usercmd_t *ucmd)
 {
 	gclient_t	*client;
