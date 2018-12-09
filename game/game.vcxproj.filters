@@ -30,9 +30,6 @@
     <ClCompile Include="g_func.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="g_items.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="g_main.c">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -159,6 +156,15 @@
     <ClCompile Include="q_shared.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\ctf\p_menu.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="g_items.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="g_ctf.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="g_local.h">
@@ -234,6 +240,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="q_shared.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="g_ctf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="p_menu.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

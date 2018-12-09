@@ -1112,7 +1112,7 @@ void PutClientInServer (edict_t *ent)
 
 	index = ent-g_edicts-1;
 	client = ent->client;
-
+	
 	// deathmatch wipes most client data every spawn
 	if (deathmatch->value)
 	{
@@ -1253,6 +1253,7 @@ void PutClientInServer (edict_t *ent)
 	// force the current weapon up
 	client->newweapon = client->pers.weapon;
 	ChangeWeapon (ent);
+	//client->resp.ctf_team = 1; //johnadv
 }
 
 /*
