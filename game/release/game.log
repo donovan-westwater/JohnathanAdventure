@@ -1,27 +1,184 @@
-﻿Build started 12/9/2018 6:37:55 PM.
+﻿Build started 12/9/2018 8:13:23 PM.
      1>Project "C:\Users\donov\Desktop\Quake modding\Games\Quake II\Johnathan Adventure\game\game.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Z7 /nologo /W4 /WX- /O2 /Oy- /D WIN32 /D NDEBUG /D _WINDOWS /D _VC80_UPGRADE=0x0600 /D _WINDLL /GF /Gm- /EHsc /MT /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\release\\" /Fd".\release\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt p_client.c
-         p_client.c
-     1>p_client.c(46): warning C4127: conditional expression is constant
-     1>p_client.c(70): warning C4100: 'self' : unreferenced formal parameter
-     1>p_client.c(179): warning C4100: 'damage' : unreferenced formal parameter
-     1>p_client.c(179): warning C4100: 'kick' : unreferenced formal parameter
-     1>p_client.c(179): warning C4100: 'other' : unreferenced formal parameter
-     1>p_client.c(179): warning C4100: 'self' : unreferenced formal parameter
-     1>p_client.c(211): warning C4100: 'inflictor' : unreferenced formal parameter
-     1>p_client.c(501): warning C4100: 'point' : unreferenced formal parameter
-     1>p_client.c(854): warning C4127: conditional expression is constant
-     1>p_client.c(939): warning C4100: 'point' : unreferenced formal parameter
-     1>p_client.c(939): warning C4100: 'attacker' : unreferenced formal parameter
-     1>p_client.c(939): warning C4100: 'inflictor' : unreferenced formal parameter
-     1>p_client.c(1379): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-     1>p_client.c(1384): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Z7 /nologo /W4 /WX- /O2 /Oy- /D WIN32 /D NDEBUG /D _WINDOWS /D _VC80_UPGRADE=0x0600 /D _WINDLL /GF /Gm- /EHsc /MT /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\release\\" /Fd".\release\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt g_ctf.c
+         g_ctf.c
+     1>g_ctf.c(377): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>g_ctf.c(519): warning C4100: 'inflictor' : unreferenced formal parameter
+     1>g_ctf.c(875): warning C4100: 'item' : unreferenced formal parameter
+     1>g_ctf.c(1031): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>g_ctf.c(1160): warning C4100: 'self' : unreferenced formal parameter
+     1>g_ctf.c(1167): warning C4100: 'self' : unreferenced formal parameter
+     1>g_ctf.c(1655): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>g_ctf.c(1695): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>g_ctf.c(1699): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>g_ctf.c(1703): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>g_ctf.c(1732): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>g_ctf.c(1736): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>g_ctf.c(1739): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>g_ctf.c(1765): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>g_ctf.c(1766): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>g_ctf.c(1777): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>g_ctf.c(1779): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>g_ctf.c(1791): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>g_ctf.c(1794): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>g_ctf.c(1594): warning C4100: 'killer' : unreferenced formal parameter
+     1>g_ctf.c(1594): warning C4100: 'ent' : unreferenced formal parameter
+     1>g_ctf.c(2229): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>g_ctf.c(2257): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>g_ctf.c(2263): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>g_ctf.c(2271): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>g_ctf.c(2273): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>g_ctf.c(2275): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>g_ctf.c(2278): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>g_ctf.c(2280): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>g_ctf.c(2282): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>g_ctf.c(2284): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>g_ctf.c(2302): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>g_ctf.c(2311): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>g_ctf.c(2313): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>g_ctf.c(2318): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>g_ctf.c(2324): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>g_ctf.c(2326): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>g_ctf.c(2339): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>g_ctf.c(2344): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>g_ctf.c(2350): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>g_ctf.c(2352): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>g_ctf.c(2373): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>g_ctf.c(2374): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>g_ctf.c(2379): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>g_ctf.c(2384): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>g_ctf.c(2385): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>g_ctf.c(2387): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>g_ctf.c(2389): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>g_ctf.c(2416): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>g_ctf.c(2422): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>g_ctf.c(2428): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>g_ctf.c(2434): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>g_ctf.c(2440): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>g_ctf.c(2447): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>g_ctf.c(2522): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(195) : see declaration of 'strncpy'
-     1>p_client.c(1424): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>g_ctf.c(2524): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(195) : see declaration of 'strncpy'
-     1>p_client.c(1446): warning C4013: 'SV_FilterPacket' undefined; assuming extern returning int
-     1>p_client.c(1727): warning C4013: 'GetChaseTarget' undefined; assuming extern returning int
+     1>g_ctf.c(2571): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(195) : see declaration of 'strncpy'
+     1>g_ctf.c(2646): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>g_ctf.c(2658): warning C4189: 'ghost' : local variable is initialized but not referenced
+     1>g_ctf.c(2758): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(195) : see declaration of 'strncpy'
+     1>g_ctf.c(3046): warning C4100: 'p' : unreferenced formal parameter
+     1>g_ctf.c(3051): warning C4100: 'p' : unreferenced formal parameter
+     1>g_ctf.c(3056): warning C4100: 'p' : unreferenced formal parameter
+     1>g_ctf.c(3083): warning C4100: 'p' : unreferenced formal parameter
+     1>g_ctf.c(3096): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>g_ctf.c(3089): warning C4100: 'p' : unreferenced formal parameter
+     1>g_ctf.c(3102): warning C4100: 'p' : unreferenced formal parameter
+     1>g_ctf.c(3135): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _stricmp. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(253) : see declaration of 'stricmp'
+     1>g_ctf.c(3138): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _stricmp. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(253) : see declaration of 'stricmp'
+     1>g_ctf.c(3161): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>g_ctf.c(3162): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>g_ctf.c(3219): warning C4100: 'p' : unreferenced formal parameter
+     1>g_ctf.c(3333): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>g_ctf.c(3335): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>g_ctf.c(3343): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>g_ctf.c(3349): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>g_ctf.c(3369): warning C4100: 'surf' : unreferenced formal parameter
+     1>g_ctf.c(3369): warning C4100: 'plane' : unreferenced formal parameter
+     1>g_ctf.c(3497): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>g_ctf.c(3508): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>g_ctf.c(3519): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>g_ctf.c(3531): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>g_ctf.c(3543): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>g_ctf.c(3555): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>g_ctf.c(3562): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>g_ctf.c(3569): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>g_ctf.c(3579): warning C4189: 'settings' : local variable is initialized but not referenced
+     1>g_ctf.c(3664): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>g_ctf.c(3668): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>g_ctf.c(3672): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>g_ctf.c(3676): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>g_ctf.c(3680): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>g_ctf.c(3684): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>g_ctf.c(3688): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>g_ctf.c(3692): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>g_ctf.c(3715): warning C4100: 'p' : unreferenced formal parameter
+     1>g_ctf.c(3737): warning C4100: 'p' : unreferenced formal parameter
+     1>g_ctf.c(3753): warning C4100: 'p' : unreferenced formal parameter
+     1>g_ctf.c(3765): warning C4100: 'p' : unreferenced formal parameter
+     1>g_ctf.c(3815): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>g_ctf.c(3843): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>g_ctf.c(3845): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>g_ctf.c(3861): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>g_ctf.c(3879): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>g_ctf.c(3881): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>g_ctf.c(3885): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>g_ctf.c(3904): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>g_ctf.c(3906): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>g_ctf.c(3927): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>g_ctf.c(3929): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>g_ctf.c(3933): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>g_ctf.c(3951): warning C4996: 'strdup': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _strdup. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(245) : see declaration of 'strdup'
+     1>g_ctf.c(3953): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(204) : see declaration of 'strtok'
+     1>g_ctf.c(3957): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(204) : see declaration of 'strtok'
+     1>g_ctf.c(3973): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(195) : see declaration of 'strncpy'
+     1>g_ctf.c(3979): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>g_ctf.c(3981): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(195) : see declaration of 'strncpy'
+     1>g_ctf.c(4017): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>c:\users\donov\desktop\quake modding\games\quake ii\johnathan adventure\game\g_ctf.c(644): warning C4701: potentially uninitialized local variable 'carrier' used
+     1>c:\users\donov\desktop\quake modding\games\quake ii\johnathan adventure\game\g_ctf.c(644): warning C4703: potentially uninitialized local pointer variable 'carrier' used
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"..\gamex86.dll" /INCREMENTAL:NO /NOLOGO winmm.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /DEF:".\game.def" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:"..\gamex86.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /BASE:"0x20000000" /DYNAMICBASE /NXCOMPAT /IMPLIB:".\..\release\gamex86.lib" /MACHINE:X86 /SAFESEH /DLL .\release\p_menu.obj
          .\release\g_ai.obj
@@ -79,4 +236,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:06.15
+Time Elapsed 00:00:01.62

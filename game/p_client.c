@@ -604,6 +604,7 @@ This is only called when the game first initializes in single player,
 but is called after each death and level change in deathmatch
 ==============
 */
+//john adv (Use this to set up waves like you did in quake 4
 void InitClientPersistant (gclient_t *client)
 {
 	gitem_t		*item;
@@ -1683,6 +1684,11 @@ void ClientThink (edict_t *ent, usercmd_t *ucmd)
 			VectorCopy (pm.viewangles, client->v_angle);
 			VectorCopy (pm.viewangles, client->ps.viewangles);
 		}
+		//john adv
+		//ZOID
+		if (client->ctf_grapple)
+			CTFGrapplePull(client->ctf_grapple);
+		//ZOID
 
 		gi.linkentity (ent);
 

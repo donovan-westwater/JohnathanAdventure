@@ -1202,6 +1202,8 @@ void CTFResetGrapple(edict_t *self)
 
 void CTFGrappleTouch (edict_t *self, edict_t *other, cplane_t *plane, csurface_t *surf)
 {
+	//gi.dprintf("Touching wall? "); //johnadv
+	//gi.cprintf(self->owner->client, PRINT_HIGH, "I hit something\n"); 
 	float volume = 1.0;
 
 	if (other == self->owner)
@@ -1227,6 +1229,7 @@ void CTFGrappleTouch (edict_t *self, edict_t *other, cplane_t *plane, csurface_t
 	}
 
 	self->owner->client->ctf_grapplestate = CTF_GRAPPLE_STATE_PULL; // we're on hook
+	//gi.dprintf("%d\n", self->owner->client->ctf_grapplestate); //johnadv
 	self->enemy = other;
 
 	self->solid = SOLID_NOT;
@@ -1250,6 +1253,8 @@ void CTFGrappleTouch (edict_t *self, edict_t *other, cplane_t *plane, csurface_t
 // draw beam between grapple and self
 void CTFGrappleDrawCable(edict_t *self)
 {
+	//gi.dprintf("Drawing Cable\n"); // johnadv
+	
 	vec3_t	offset, start, end, f, r;
 	vec3_t	dir;
 	float	distance;
@@ -1314,6 +1319,7 @@ void SV_AddGravity (edict_t *ent);
 // pull the player toward the grapple
 void CTFGrapplePull(edict_t *self)
 {
+	//gi.dprintf("Should be pulling\n"); //johnadv
 	vec3_t hookdir, v;
 	float vlen;
 
