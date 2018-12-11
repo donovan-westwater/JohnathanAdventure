@@ -1172,7 +1172,7 @@ void PutClientInServer (edict_t *ent)
 	ent->groundentity = NULL;
 	ent->client = &game.clients[index];
 	ent->takedamage = DAMAGE_AIM;
-	ent->movetype = MOVETYPE_WALK;
+	ent->movetype = MOVETYPE_WALK; //johnadv originally ent->movetype = MOVETYPE_WALK; 
 	ent->viewheight = 22;
 	ent->inuse = true;
 	ent->classname = "player";
@@ -1647,11 +1647,14 @@ void ClientThink (edict_t *ent, usercmd_t *ucmd)
 		client->ps.pmove = pm.s;
 		client->old_pmove = pm.s;
 
-		for (i=0 ; i<3 ; i++)
+		for (i = 0; i < 3; i++)
 		{
-			ent->s.origin[i] = pm.s.origin[i]*0.125;
-			ent->velocity[i] = pm.s.velocity[i]*0.125;
+			ent->s.origin[i] = pm.s.origin[i] * 0.125;    //johnadv oringally ent->s.origin[i] = pm.s.origin[i]*0.125;
 		}
+			ent->velocity[0] = pm.s.velocity[0] * 0; //johnadv originally ent->velocity[i] = pm.s.velocity[i]*0.125; 
+			ent->velocity[1] = pm.s.velocity[1] * 0;
+			ent->velocity[2] = pm.s.velocity[2] * 0.125;
+		//}
 
 		VectorCopy (pm.mins, ent->mins);
 		VectorCopy (pm.maxs, ent->maxs);
