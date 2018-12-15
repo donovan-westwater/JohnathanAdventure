@@ -267,8 +267,9 @@ spawn_t	spawns[] = {
 
 	{NULL, NULL}
 };
-
+//johnadv This might be it. create a spawn_t struct with the name of monster you want inside it. Then use the function below to call it and see what happens
 /*
+Check the Spawn functions in the m_ classes for the spawn fucntion for the monster you want (the fucntion will start with SP_...)
 ===============
 ED_CallSpawn
 

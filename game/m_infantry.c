@@ -555,12 +555,14 @@ void infantry_attack(edict_t *self)
 */
 void SP_monster_infantry (edict_t *self)
 {
+	//johnadv
+	/*
 	if (deathmatch->value)
 	{
 		G_FreeEdict (self);
 		return;
 	}
-
+	*/
 	sound_pain1 = gi.soundindex ("infantry/infpain1.wav");
 	sound_pain2 = gi.soundindex ("infantry/infpain2.wav");
 	sound_die1 = gi.soundindex ("infantry/infdeth1.wav");
@@ -604,4 +606,21 @@ void SP_monster_infantry (edict_t *self)
 	self->monsterinfo.scale = MODEL_SCALE;
 
 	walkmonster_start (self);
+}
+//johnadv (might be unnessary)
+void spawn_wave(edict_t *relative){
+	//Alter postion and then spawn infantry
+	edict_t *self = G_Spawn();
+	vec3_t forward;
+	// Place decoy 100 units forward of our position
+
+	//replace the 100 with a random num generator of some kind
+	//All edict_t contain pointer to client, so we use self in this case to call the client
+
+	AngleVectors(relative->client->v_angle, forward, NULL, NULL);
+	gi.dprintf("%d", relative->s.origin[2]);
+	//forward[2] = relative->s.origin[2]+15;
+	VectorMA(relative->s.origin, 50*crandom()+100, forward, self->s.origin);
+	self->s.origin[2] = relative->s.origin[2] + 15;
+	SP_monster_infantry(self);
 }

@@ -412,6 +412,7 @@ void berserk_die (edict_t *self, edict_t *inflictor, edict_t *attacker, int dama
 */
 void SP_monster_berserk (edict_t *self)
 {
+	//Self deletes if multiplayer, figuring spawning in single before turning this off
 	if (deathmatch->value)
 	{
 		G_FreeEdict (self);

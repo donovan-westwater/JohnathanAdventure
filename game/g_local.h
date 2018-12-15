@@ -829,6 +829,9 @@ void SaveClientData (void);
 void FetchClientEntData (edict_t *ent);
 void EndDMLevel (void);
 
+//johnadv
+void spawn_wave(edict_t *ent);
+
 
 //============================================================================
 
@@ -1161,6 +1164,8 @@ struct edict_s
 
 
 	//ADD ANYTHING YOU NEED HERE johnadv
+	edict_t *waveMon;
+	edict_t *relative;
 };
 
 //ZOID
