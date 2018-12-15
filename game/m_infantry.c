@@ -618,9 +618,11 @@ void spawn_wave(edict_t *relative){
 	//All edict_t contain pointer to client, so we use self in this case to call the client
 
 	AngleVectors(relative->client->v_angle, forward, NULL, NULL);
-	gi.dprintf("%d", relative->s.origin[2]);
+	//gi.dprintf("%d", relative->s.origin[2]);
 	//forward[2] = relative->s.origin[2]+15;
-	VectorMA(relative->s.origin, 50*crandom()+100, forward, self->s.origin);
+	forward[0] = crandom() - 1.25;
+	forward[1] = crandom() - 1.25;
+	VectorMA(relative->s.origin, 10*crandom()+50, forward, self->s.origin);
 	self->s.origin[2] = relative->s.origin[2] + 15;
 	SP_monster_infantry(self);
 }
