@@ -276,7 +276,8 @@ pistols, rifles, etc....
 */
 void fire_bullet (edict_t *self, vec3_t start, vec3_t aimdir, int damage, int kick, int hspread, int vspread, int mod)
 {
-	fire_lead (self, start, aimdir, damage, kick, TE_GUNSHOT, hspread, vspread, mod);
+	//johnadv oringally fire_lead (self, start, aimdir, damage, kick, TE_GUNSHOT, hspread, vspread, mod);
+	fire_lead (self, start, aimdir, damage-damage, 50*kick, TE_GUNSHOT, hspread, vspread, mod);
 }
 
 
@@ -699,7 +700,7 @@ void fire_rail (edict_t *self, vec3_t start, vec3_t aimdir, int damage, int kick
 				ignore = NULL;
 			//johnadv
 			if ((tr.ent != self) && (tr.ent->takedamage))
-				T_Damage (tr.ent, self, self, aimdir, tr.endpos, tr.plane.normal, damage, kick, 0, MOD_RAILGUN);
+				T_Damage (tr.ent, self, self, aimdir, tr.endpos, tr.plane.normal, damage-90, -4*kick, 0, MOD_RAILGUN);
 		}
 
 		VectorCopy (tr.endpos, from);
