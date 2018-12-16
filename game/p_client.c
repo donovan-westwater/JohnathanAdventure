@@ -627,7 +627,31 @@ void InitClientPersistant (gclient_t *client)
 	//ZOID
 	item = FindItem("Grapple");
 	client->pers.inventory[ITEM_INDEX(item)] = 1;
+
+	client->pers.weapon = item;
+	//ZOID johnadv
+	client->pers.lastweapon = item;
 	//ZOID
+
+	//ZOID
+	item = FindItem("Slugs");
+	client->pers.inventory[ITEM_INDEX(item)] += 500;
+	item = FindItem("Railgun");
+	client->pers.inventory[ITEM_INDEX(item)] = 1;
+	
+	//ZOID
+
+	client->pers.weapon = item;
+	//ZOID johnadv
+	client->pers.lastweapon = item;
+	//ZOID
+
+	//ZOID
+	item = FindItem("Bullets");
+	client->pers.inventory[ITEM_INDEX(item)] += 500;
+	item = FindItem("Chaingun");
+	client->pers.inventory[ITEM_INDEX(item)] = 1;
+	
 
 	client->pers.health			= 100;
 	client->pers.max_health		= 100;

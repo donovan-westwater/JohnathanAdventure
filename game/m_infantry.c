@@ -622,7 +622,9 @@ void spawn_wave(edict_t *relative){
 	//gi.dprintf("%d", relative->s.origin[2]);
 	//forward[2] = relative->s.origin[2]+15;
 	forward[0] = crandom() - 1.25;
+	//gi.dprintf("%d\n",forward[0]);
 	forward[1] = crandom() - 1.25;
+	//gi.dprintf("%d\n", forward[1]);
 	VectorMA(relative->s.origin, 10*crandom()+50, forward, self->s.origin);
 	self->s.origin[2] = relative->s.origin[2] + 15;
 	SP_monster_infantry(self);
