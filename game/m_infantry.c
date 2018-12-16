@@ -607,7 +607,8 @@ void SP_monster_infantry (edict_t *self)
 
 	walkmonster_start (self);
 }
-//johnadv (might be unnessary)
+//johnadv (the relative parameter is there for when a ent is used stead of the enemie pointer, if 
+//		  the enemy pointer is being passed in, just remove the sself = G_spawn() part)
 void spawn_wave(edict_t *relative){
 	//Alter postion and then spawn infantry
 	edict_t *self = G_Spawn();

@@ -19,6 +19,9 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 */
 #include "g_local.h"
 #include "m_player.h"
+//johnadv
+float waveCount = 0;
+float roundTime = 30;
 
 void ClientUserinfoChanged (edict_t *ent, char *userinfo);
 
@@ -607,6 +610,7 @@ but is called after each death and level change in deathmatch
 //john adv (Use this to set up waves like you did in quake 4
 void InitClientPersistant (gclient_t *client)
 {
+	waveCount = 0;
 	gitem_t		*item;
 
 	memset (&client->pers, 0, sizeof(client->pers));
@@ -1760,6 +1764,21 @@ void ClientThink (edict_t *ent, usercmd_t *ucmd)
 		if (other->inuse && other->client->chase_target == ent)
 			UpdateChaseCam(other);
 	}
+
+	//johnadv Set up the waves over here: Remember to create wave variable and timer!
+
+	if (level.time >= (waveCount+1)*roundTime){
+		spawn_wave(ent);
+		spawn_wave(ent);
+		spawn_wave(ent);
+		spawn_wave(ent);
+		spawn_wave(ent);
+		//Add random upgrade here?
+
+
+		waveCount++;
+	}
+
 }
 
 
