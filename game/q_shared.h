@@ -1009,6 +1009,10 @@ typedef enum
 #define STAT_CHASE				16
 #define STAT_SPECTATOR			17
 
+//johnadv
+#define STAT_WAVENUMBER_STRING 18
+#define STAT_WAVENUMBER        19
+
 #define	MAX_STATS				32
 
 

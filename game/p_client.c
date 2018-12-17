@@ -611,6 +611,7 @@ but is called after each death and level change in deathmatch
 void InitClientPersistant (gclient_t *client)
 {
 	waveCount = 0;
+	client->waveNum = waveCount;
 	gitem_t		*item;
 
 	memset (&client->pers, 0, sizeof(client->pers));
@@ -1801,6 +1802,7 @@ void ClientThink (edict_t *ent, usercmd_t *ucmd)
 
 
 		waveCount++;
+		ent->client->waveNum = waveCount;
 	}
 
 }

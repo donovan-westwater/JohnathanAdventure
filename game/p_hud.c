@@ -386,6 +386,10 @@ void G_SetStats (edict_t *ent)
 	ent->client->ps.stats[STAT_HEALTH_ICON] = level.pic_health;
 	ent->client->ps.stats[STAT_HEALTH] = ent->health;
 
+	//johnadv wave counter
+	ent->client->ps.stats[STAT_WAVENUMBER] = ent->client->waveNum;
+
+
 	//
 	// ammo
 	//

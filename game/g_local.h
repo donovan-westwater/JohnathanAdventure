@@ -925,6 +925,7 @@ struct gclient_s
 	client_persistant_t	pers;
 	client_respawn_t	resp;
 	pmove_state_t		old_pmove;	// for detecting out-of-pmove changes
+	int waveNum;
 
 	qboolean	showscores;			// set layout stat
 //ZOID

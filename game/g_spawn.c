@@ -655,6 +655,13 @@ char *single_statusbar =
 "xv	50 "
 "pic 0 "
 
+//wave counter johnadv
+"	yb	-24 "		// New. Set Y-cursor -24 pixels from physical screen bottom
+"	xv	-68 "		// New. Set X-cursor -58 pixels from physical screen right
+//"	string	wave: "    working on getting number to show up first 
+"	xv	-54 "
+"	num	2	19 "
+
 // ammo
 "if 2 "
 "	xv	100 "
