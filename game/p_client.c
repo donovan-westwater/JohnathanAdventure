@@ -1717,8 +1717,10 @@ void ClientThink (edict_t *ent, usercmd_t *ucmd)
 			VectorCopy (pm.viewangles, client->ps.viewangles);
 		}
 		//john adv
+		gitem_t		*item;
+		item = FindItem("Grapple");
 		//ZOID
-		if (client->ctf_grapple)
+		if (client->ctf_grapple && client->pers.weapon == item)
 			CTFGrapplePull(client->ctf_grapple);
 		//ZOID
 
