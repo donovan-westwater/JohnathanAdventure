@@ -1720,8 +1720,10 @@ void ClientThink (edict_t *ent, usercmd_t *ucmd)
 		gitem_t		*item;
 		item = FindItem("Grapple");
 		//ZOID
-		if (!client->pers.weapon == item && client->ctf_grapple)
+
+		if (client->pers.weapon != item && client->ctf_grapple)
 		{
+			//gi.dprintf("Should be resetting ");
 			CTFResetGrapple(client->ctf_grapple);
 		}
 		if (client->ctf_grapple && client->pers.weapon == item)
