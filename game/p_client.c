@@ -1801,13 +1801,15 @@ void ClientThink (edict_t *ent, usercmd_t *ucmd)
 	//johnadv Set up the waves over here: Remember to create wave variable and timer!
 
 	if (level.time >= (waveCount+1)*roundTime){
+		gitem_t		*powerUp;
 		spawn_wave(ent);
 		spawn_wave(ent);
 		spawn_wave(ent);
 		spawn_wave(ent);
 		spawn_wave(ent);
 		//Add random upgrade here?
-
+		powerUp = FindItemByClassname("item_quad");
+		client->pers.inventory[ITEM_INDEX(powerUp)] == NULL ? client->pers.inventory[ITEM_INDEX(powerUp)] = 1 : client->pers.inventory[ITEM_INDEX(powerUp)] + 1;
 
 		waveCount++;
 		ent->client->waveNum = waveCount;

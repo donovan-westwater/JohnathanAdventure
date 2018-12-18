@@ -277,7 +277,7 @@ pistols, rifles, etc....
 void fire_bullet (edict_t *self, vec3_t start, vec3_t aimdir, int damage, int kick, int hspread, int vspread, int mod)
 {
 	//johnadv oringally fire_lead (self, start, aimdir, damage, kick, TE_GUNSHOT, hspread, vspread, mod);
-	fire_lead (self, start, aimdir, damage-damage, 50*kick, TE_GUNSHOT, hspread, vspread, mod);
+	fire_lead (self, start, aimdir, damage-(damage-1), 50*kick, TE_GUNSHOT, hspread, vspread, mod);
 }
 
 
