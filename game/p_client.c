@@ -607,7 +607,7 @@ This is only called when the game first initializes in single player,
 but is called after each death and level change in deathmatch
 ==============
 */
-//john adv (Use this to set up waves like you did in quake 4
+//john adv (Use this to set up waves like you did in quake 4)
 void InitClientPersistant (gclient_t *client)
 {
 	waveCount = 0;
