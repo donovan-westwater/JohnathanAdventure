@@ -1802,15 +1802,29 @@ void ClientThink (edict_t *ent, usercmd_t *ucmd)
 
 	if (level.time >= (waveCount+1)*roundTime){
 		gitem_t		*powerUp;
+		float decide = crandom()/(crandom());
 		spawn_wave(ent);
 		spawn_wave(ent);
 		spawn_wave(ent);
 		spawn_wave(ent);
 		spawn_wave(ent);
 		//Add random upgrade here?
+		if (decide > 2){
 		powerUp = FindItemByClassname("item_quad");
 		client->pers.inventory[ITEM_INDEX(powerUp)] == NULL ? client->pers.inventory[ITEM_INDEX(powerUp)] = 1 : client->pers.inventory[ITEM_INDEX(powerUp)] + 1;
-
+		}
+		else if (decide > 0)
+		{
+			powerUp = FindItemByClassname("item_invulnerability");
+			client->pers.inventory[ITEM_INDEX(powerUp)] == NULL ? client->pers.inventory[ITEM_INDEX(powerUp)] = 1 : client->pers.inventory[ITEM_INDEX(powerUp)] + 1;
+		}else{
+			ent->max_health += 20;
+			ent->health += ent->max_health / 2;
+		}
+		powerUp = FindItem("Bullets");
+		client->pers.inventory[ITEM_INDEX(powerUp)] += 50;
+		powerUp = FindItem("Slugs");
+		client->pers.inventory[ITEM_INDEX(powerUp)] += 50;
 		waveCount++;
 		ent->client->waveNum = waveCount;
 	}

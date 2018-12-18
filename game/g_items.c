@@ -196,8 +196,10 @@ void Drop_General (edict_t *ent, gitem_t *item)
 
 qboolean Pickup_Adrenaline (edict_t *ent, edict_t *other)
 {
+	//johnadv
+	other->max_health += 1;
 	if (!deathmatch->value)
-		other->max_health += 1;
+		//other->max_health += 1;
 
 	if (other->health < other->max_health)
 		other->health = other->max_health;
